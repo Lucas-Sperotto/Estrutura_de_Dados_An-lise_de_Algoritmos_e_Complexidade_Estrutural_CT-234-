@@ -1,0 +1,90 @@
+PRIMEIRA AULA:
+
+1 - Elabore um algoritmo paralelo para encontrar o maior valor presente em um vetor de N posições.
+		Dica: utilize N processadores.
+	a) Qual a complexidade desse algoritmo?
+	b) Haveria outros algoritmos mais eficientes ou que utilizassem menos processadores?
+		Dica: divida o vetor em blocos de tamanho O(log N).
+
+
+SEGUNDA AULA:
+
+2 - Demonstre por indução matemática:
+	a) n^3 + 2n é divisível por 3, para n = 0.
+	b) 2^0 + 2^1 + 2^2 + ... + 2^n = 2^n+1 - 1, para n = 0.
+	c) 2^-1 + 2^-2 + 2^-3 + ... + 2^-n < 1, para n > 0.
+	d) 2^n > n^2, para n > 4.
+	e) A representação binária de um número n>0 tem |lg n| + 1 bits. 
+		Dica: considere separadamente os casos em que n é ou não uma potência de 2.
+		
+3 - O programa recursivo abaixo calcula a soma dos números naturais entre 1 e n, onde n>0:
+	int sum(int n) {
+		if (n == 1)
+			return 1;
+		else
+			return n + sum(n-1);
+	}
+	a) Simule a sua execução para a entrada n = 5,mostrando a pilha de chamadas.
+
+4 - Resolva com algoritmos recursivos:
+	a) Imprimir os n primeiros números naturais em ordem crescente. //OK
+	b) Idem, mas em ordem decrescente. //OK
+	c) Encontrar o valor máximo presente em um vetor. //OK
+	d) Verificar se um determinado valor está ou não presente em um vetor. //OK
+	e) Calcular a soma dos valores armazenados em um vetor. //OK
+	f) Inverter a ordem dos valores armazenados em um vetor. //OK
+
+5 - Implementar Torre de Hanoi. //OK
+
+6 - Dado um número natural, imprimir recursivamente a sua representação binária.
+
+7 - (Busca binária) Dado um vetor ordenado de tamanho n, verificar se um determinado elemento está ou não presente. // OK 
+
+8 - (Gray code) Gerar recursivamente todas as representações de n bits, de tal modo que, entre duas sucessivas, haja um único bit distinto.
+
+9 - Torres de Saigon: idem a Hanoi, mas com 2 torres auxiliares.
+
+10 - Pesquisar análise sintática recursiva.
+
+11 - Resolva as recorrências:
+	a) T(1) = 1 e T(n) = T(n-1) + 1, n>1.
+	b) T(1) = 1 e T(n) = T(n-1) + n, n>1.
+	c) T(0) = 0, T(1) = 1 e T(n) = T(n-2) + 2n + 1, n>1.
+	d) T(1) = 1 e T(n) = T(|n/2|) + n, n>1..
+	e) T(1) = 1, T(2) = 1 e T(n) = T(n/3) + T(2n/3) + kn.
+	
+
+TERÇEIRA AULA:
+
+12 - Escreva um programa que leia uma expressão matemática com ( ), [ ] e { }, e informe se está balanceada
+	(não é preciso calculá-la, nem preocupar-se com a presença de outros caracteres).
+ 
+13 - Escreva um programa para resolver qualquer instância do Problema de Josephus.
+	Faça uma versão que utilize vetor e outra com listas ligadas. // OK
+
+
+QUARTA AULA:
+
+14 - Pesquisar os algoritmos de eliminação em árvores rubro-negras e comprovar que também gastam tempo O(log n).
+Importante: repare que, na implementação de uma árvore rubro-negra, é suficiente que cada nó armazene a sua cor (ou seja, basta uma simples flag
+booleana).
+
+
+SEXTA AULA:
+
+15 - Implemente uma fila de prioridades utilizando lista ligada e calcule a complexidade de tempo de cada uma das suas operações.
+
+16 - Compare esses resultados com a implementação que utiliza heap.
+
+17 - Implemente todos os algoritmos apresentados: BubbleSort, SelectionSort, InsertionSort, MergeSort, RadixSort, HeapSort e QuickSort.
+
+18 - Crie um arquivo com milhares de números inteiros gerados aleatoriamente, e através dele compare os tempos de execução desses algoritmos.
+
+19 - Testar a rede de ordenação no slide 61 para outros números.
+
+20 - Desenhar uma rede de ordenação com 16 entradas.
+
+
+
+
+
